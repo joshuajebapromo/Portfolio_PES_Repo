@@ -331,77 +331,100 @@
 <section id="selfassess" class="page-section">
   <div class="content-wrap">
     <div class="sec-heading"><h2>Self Assessment Evaluation on Program Outcome</h2><div class="sec-divider"></div></div>
-    <div class="assessment-grid">
-      <!-- TABLE -->
-      <div>
-        <h3 style="font-size:14px;font-weight:700;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;color:var(--red)">Level of Achievement</h3>
-        <table class="sa-table">
-          <thead>
-            <tr>
-              <th>Programme Outcome</th>
-              <th>1</th><th>2</th><th>3</th><th>4</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td contenteditable="true">PO1</td><td></td><td></td><td>✔</td><td></td></tr>
-            <tr><td contenteditable="true">PO2</td><td></td><td></td><td>✔</td><td></td></tr>
-            <tr><td contenteditable="true">PO3</td><td></td><td>✔</td><td></td><td></td></tr>
-            <tr><td contenteditable="true">PO4</td><td></td><td></td><td>✔</td><td></td></tr>
-            <tr><td contenteditable="true">PO5</td><td></td><td>✔</td><td></td><td></td></tr>
-            <tr><td contenteditable="true">PO6</td><td></td><td></td><td>✔</td><td></td></tr>
-            <tr><td contenteditable="true">PO7</td><td></td><td>✔</td><td></td><td></td></tr>
-            <tr><td contenteditable="true">PO8</td><td></td><td></td><td>✔</td><td></td></tr>
-            <tr><td contenteditable="true">PO9</td><td></td><td></td><td></td><td>✔</td></tr>
-            <tr><td contenteditable="true">PO10</td><td></td><td></td><td>✔</td><td></td></tr>
-            <tr><td contenteditable="true">PO11</td><td></td><td></td><td>✔</td><td></td></tr>
-            <tr><td contenteditable="true">PO12</td><td></td><td>✔</td><td></td><td></td></tr>
-          </tbody>
-        </table>
-        <p style="font-size:12px;color:var(--gray-mid);margin-top:10px" contenteditable="true">Scale: 1 = Introductory &nbsp;|&nbsp; 2 = Developing &nbsp;|&nbsp; 3 = Accomplished &nbsp;|&nbsp; 4 = Exemplary</p>
-      </div>
-      <!-- RADAR CHART -->
-      <div class="radar-box">
-        <h4 contenteditable="true">Achievement of Programme Outcomes</h4>
-        <svg class="radar-svg" viewBox="0 0 340 320" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <style>.rl{font-size:10px;font-family:Segoe UI,sans-serif;fill:#555;text-anchor:middle}</style>
-          </defs>
-          <!-- Grid circles -->
-          <circle cx="170" cy="160" r="120" fill="none" stroke="#ddd" stroke-width="1"/>
-          <circle cx="170" cy="160" r="90" fill="none" stroke="#ddd" stroke-width="1"/>
-          <circle cx="170" cy="160" r="60" fill="none" stroke="#ddd" stroke-width="1"/>
-          <circle cx="170" cy="160" r="30" fill="none" stroke="#ddd" stroke-width="1"/>
-          <!-- Axes (12 POs) -->
-          <line x1="170" y1="160" x2="170" y2="40" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="231" y2="47" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="280" y2="90" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="290" y2="160" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="280" y2="230" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="231" y2="273" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="170" y2="280" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="109" y2="273" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="60" y2="230" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="50" y2="160" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="60" y2="90" stroke="#ccc" stroke-width="1"/>
-          <line x1="170" y1="160" x2="109" y2="47" stroke="#ccc" stroke-width="1"/>
-          <!-- Filled polygon (scores: PO1=3,PO2=3,PO3=2,PO4=3,PO5=2,PO6=3,PO7=2,PO8=3,PO9=4,PO10=3,PO11=3,PO12=2) -->
-          <polygon points="170,67 222,70 262,104 268,160 262,215 222,249 170,235 123,249 85,215 79,160 85,104 123,70"
-            fill="rgba(192,57,43,0.2)" stroke="#C0392B" stroke-width="2"/>
-          <!-- Labels -->
-          <text x="170" y="33" class="rl">PO1</text>
-          <text x="238" y="44" class="rl">PO2</text>
-          <text x="293" y="87" class="rl">PO3</text>
-          <text x="308" y="163" class="rl">PO4</text>
-          <text x="293" y="237" class="rl">PO5</text>
-          <text x="238" y="284" class="rl">PO6</text>
-          <text x="170" y="299" class="rl">PO7</text>
-          <text x="100" y="284" class="rl">PO8</text>
-          <text x="44" y="237" class="rl">PO9</text>
-          <text x="30" y="163" class="rl">PO10</text>
-          <text x="44" y="87" class="rl">PO11</text>
-          <text x="100" y="44" class="rl">PO12</text>
-        </svg>
-      </div>
+
+    <!-- Student info bar -->
+    <div class="sa-info-bar">
+      <div><span class="sa-label">Name:</span> Joshua Jeremiah Jebaretnam</div>
+      <div><span class="sa-label">Student Number:</span> 0353225</div>
+      <div><span class="sa-label">Programme:</span> Bachelor of Mechanical Engineering with Honours</div>
+      <div><span class="sa-label">Intake:</span> March 2023</div>
+    </div>
+
+    <!-- Scrollable PLO table -->
+    <div class="sa-table-wrap">
+      <table class="sa-table sa-plo-table">
+        <thead>
+          <tr>
+            <th rowspan="2" style="vertical-align:middle">Semester</th>
+            <th>PLO1<span class="tgc-sub">TGC1</span><span class="desc-sub">Discipline-specific knowledge and Skills</span></th>
+            <th>PLO2<span class="tgc-sub">TGC2</span><span class="desc-sub">Problem Solving, Critical and Creative Thinking Skills</span></th>
+            <th>PLO3<span class="tgc-sub">TGC7</span><span class="desc-sub">Entrepreneurialism</span></th>
+            <th>PLO4<span class="tgc-sub">TGC2</span><span class="desc-sub">Problem Solving, Critical and Creative Thinking Skills</span></th>
+            <th>PLO5<span class="tgc-sub">TGC1</span><span class="desc-sub">Discipline-specific knowledge and Skills</span></th>
+            <th>PLO6<span class="tgc-sub">TGC5</span><span class="desc-sub">Personal Competencies</span></th>
+            <th>PLO7<span class="tgc-sub">TGC8</span><span class="desc-sub">Global Perspective</span></th>
+            <th>PLO8<span class="tgc-sub">TGC8</span><span class="desc-sub">Global Perspective</span></th>
+            <th>PLO9<span class="tgc-sub">TGC6</span><span class="desc-sub">Social Competencies</span></th>
+            <th>PLO10<span class="tgc-sub">TGC3</span><span class="desc-sub">Communication Skills</span></th>
+            <th>PLO11<span class="tgc-sub">TGC6</span><span class="desc-sub">Social Competencies</span></th>
+            <th>PLO12<span class="tgc-sub">TGC4</span><span class="desc-sub">Lifelong Learning</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Mar 23</td><td>1.93</td><td>3.67</td><td>4.00</td><td>2.67</td><td>3.00</td><td>3.90</td><td>2.67</td><td>0.00</td><td>4.00</td><td>4.00</td><td>3.48</td><td>0.00</td></tr>
+          <tr><td>Aug 23</td><td>2.41</td><td>1.57</td><td>3.84</td><td>2.71</td><td>2.78</td><td>4.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+          <tr><td>Feb 24</td><td>3.42</td><td>3.00</td><td>0.00</td><td>2.67</td><td>0.00</td><td>0.00</td><td>0.00</td><td>3.64</td><td>0.00</td><td>0.00</td><td>0.00</td><td>3.78</td></tr>
+          <tr><td>Apr 24</td><td>2.81</td><td>3.04</td><td>4.00</td><td>3.00</td><td>3.21</td><td>4.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>3.28</td><td>4.00</td><td>2.33</td></tr>
+          <tr><td>Sep 24</td><td>2.31</td><td>2.26</td><td>0.00</td><td>2.74</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>2.00</td><td>0.00</td><td>0.00</td></tr>
+          <tr><td>Apr 25</td><td>3.09</td><td>2.41</td><td>0.00</td><td>3.73</td><td>3.02</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+          <tr><td>Sep 25</td><td>2.67</td><td>2.33</td><td>0.00</td><td>0.00</td><td>3.44</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+          <tr><td>Feb 26</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td></tr>
+          <tr class="wcgpa-row"><td>PLO WCGPA</td><td>2.67</td><td>2.57</td><td>3.96</td><td>2.92</td><td>3.31</td><td>3.95</td><td>2.67</td><td>3.64</td><td>4.00</td><td>2.95</td><td>3.86</td><td>3.10</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Radar chart -->
+    <div class="radar-box">
+      <h4>PLO WCGPA Achievement</h4>
+      <svg class="radar-svg" viewBox="0 0 380 335" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>
+            .rl{font-size:9.5px;font-family:'Segoe UI',sans-serif;fill:#444;text-anchor:middle}
+            .rl-b{font-weight:700;fill:#222}
+          </style>
+        </defs>
+        <!-- Grid circles (center 190,165 — r=30/60/90/120 → score 1/2/3/4) -->
+        <circle cx="190" cy="165" r="120" fill="none" stroke="#ddd" stroke-width="1"/>
+        <circle cx="190" cy="165" r="90"  fill="none" stroke="#ddd" stroke-width="1"/>
+        <circle cx="190" cy="165" r="60"  fill="none" stroke="#ddd" stroke-width="1"/>
+        <circle cx="190" cy="165" r="30"  fill="none" stroke="#ddd" stroke-width="1"/>
+        <!-- Scale tick labels along PLO1 axis -->
+        <text x="196" y="138" style="font-size:8px;fill:#bbb;font-family:'Segoe UI',sans-serif">1</text>
+        <text x="196" y="108" style="font-size:8px;fill:#bbb;font-family:'Segoe UI',sans-serif">2</text>
+        <text x="196" y="78"  style="font-size:8px;fill:#bbb;font-family:'Segoe UI',sans-serif">3</text>
+        <text x="196" y="48"  style="font-size:8px;fill:#bbb;font-family:'Segoe UI',sans-serif">4</text>
+        <!-- Axes -->
+        <line x1="190" y1="165" x2="190" y2="45"  stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="250" y2="61"  stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="294" y2="105" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="310" y2="165" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="294" y2="225" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="250" y2="269" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="190" y2="285" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="130" y2="269" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="86"  y2="225" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="70"  y2="165" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="86"  y2="105" stroke="#ccc" stroke-width="1"/>
+        <line x1="190" y1="165" x2="130" y2="61"  stroke="#ccc" stroke-width="1"/>
+        <!-- Data polygon — WCGPA: PLO1=2.67 PLO2=2.57 PLO3=3.96 PLO4=2.92 PLO5=3.31 PLO6=3.95 PLO7=2.67 PLO8=3.64 PLO9=4.00 PLO10=2.95 PLO11=3.86 PLO12=3.10 -->
+        <polygon points="190,85 229,98 293,106 278,165 276,215 249,268 190,245 135,260 86,225 102,165 90,107 144,84"
+          fill="rgba(192,57,43,0.18)" stroke="#C0392B" stroke-width="2"/>
+        <!-- Labels -->
+        <text x="190" y="29"  class="rl rl-b">PLO1<tspan class="rl" x="190" dy="12">(TGC1)</tspan></text>
+        <text x="264" y="44"  class="rl rl-b">PLO2<tspan class="rl" x="264" dy="12">(TGC2)</tspan></text>
+        <text x="312" y="90"  class="rl rl-b">PLO3<tspan class="rl" x="312" dy="12">(TGC7)</tspan></text>
+        <text x="330" y="162" class="rl rl-b">PLO4<tspan class="rl" x="330" dy="12">(TGC2)</tspan></text>
+        <text x="312" y="231" class="rl rl-b">PLO5<tspan class="rl" x="312" dy="12">(TGC1)</tspan></text>
+        <text x="264" y="281" class="rl rl-b">PLO6<tspan class="rl" x="264" dy="12">(TGC5)</tspan></text>
+        <text x="190" y="304" class="rl rl-b">PLO7<tspan class="rl" x="190" dy="12">(TGC8)</tspan></text>
+        <text x="116" y="281" class="rl rl-b">PLO8<tspan class="rl" x="116" dy="12">(TGC8)</tspan></text>
+        <text x="64"  y="231" class="rl rl-b">PLO9<tspan class="rl" x="64"  dy="12">(TGC6)</tspan></text>
+        <text x="36"  y="162" class="rl rl-b">PLO10<tspan class="rl" x="36" dy="12">(TGC3)</tspan></text>
+        <text x="64"  y="90"  class="rl rl-b">PLO11<tspan class="rl" x="64"  dy="12">(TGC6)</tspan></text>
+        <text x="116" y="44"  class="rl rl-b">PLO12<tspan class="rl" x="116" dy="12">(TGC4)</tspan></text>
+      </svg>
+      <p style="font-size:11px;color:var(--gray-mid);margin-top:6px">&#9632; WCGPA &nbsp;(scale 0 – 4.00)</p>
     </div>
   </div>
 </section>
