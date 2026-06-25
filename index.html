@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<div class="edit-hint" id="editHint">✏️ Click any text to edit</div>
 
 <!-- ═══ NAV ═══ -->
 <nav>
@@ -30,129 +29,153 @@
 </nav>
 
 <!-- ═══════════════ HOME ═══════════════ -->
-<section id="home" class="page-section active">
-  <div class="hero-banner">
-    <div class="hero-overlay">
-      <h1 class="hero-title"><span class="accent">Professional</span><br>Engineers &amp; Society</h1>
-      <p class="hero-sub" contenteditable="true">Joshua Jeremiah Jebaretnam (0353225)</p>
+<section id="home" class="page-section active paged-section">
+  <div class="slide-track" id="home-track">
+
+    <!-- Slide 1 — Hero -->
+    <div class="slide">
+      <div class="hero-banner">
+        <div class="hero-overlay">
+          <h1 class="hero-title"><span class="accent">Professional</span><br>Engineers &amp; Society</h1>
+          <p class="hero-sub">Joshua Jeremiah Jebaretnam (0353225)</p>
+        </div>
+      </div>
+      <button class="slide-arrow-btn" onclick="goSlide('home-track',1)" aria-label="See more">&#x2304;</button>
     </div>
-  </div>
-  <div class="content-wrap">
-    <div class="sec-heading"><h2 contenteditable="true">Welcome</h2><div class="sec-divider"></div></div>
-    <div style="max-width:720px;margin:0 auto">
-      <p style="font-size:15px;color:var(--gray-mid);line-height:1.85;margin-bottom:16px" contenteditable="true">
-        Welcome to my PES E-Portfolio. This portfolio documents my academic journey, professional development, and involvement with the Professional Engineers &amp; Society at Taylor's University. Navigate through the sections to explore my mission, SWOT analysis, program outcomes, and supporting evidence.
-      </p>
-      <p style="font-size:15px;color:var(--gray-mid);line-height:1.85" contenteditable="true">
-        I am currently pursuing a Bachelor of Mechanical Engineering (Hons) at Taylor's University, School of Engineering. Alongside my studies, I operate Tweedy Essentials (a 3D printing business), contribute to the Taylor's Symphony Orchestra, and work as an Audio-Visual specialist for events.
-      </p>
+
+    <!-- Slide 2 — Welcome -->
+    <div class="slide" style="background:var(--white)">
+      <div class="content-wrap">
+        <div class="sec-heading"><h2>Welcome</h2><div class="sec-divider"></div></div>
+        <div style="max-width:720px;margin:0 auto">
+          <p style="font-size:15px;color:var(--gray-mid);line-height:1.85;margin-bottom:16px">
+            Welcome to my PES E-Portfolio. This portfolio documents my academic journey, professional development, and involvement with the Professional Engineers &amp; Society at Taylor's University. Navigate through the sections to explore my mission, SWOT analysis, program outcomes, and supporting evidence.
+          </p>
+          <p style="font-size:15px;color:var(--gray-mid);line-height:1.85">
+            I am currently pursuing a Bachelor of Mechanical Engineering (Hons) at Taylor's University, School of Engineering. Alongside my studies, I operate Tweedy Essentials (a 3D printing business), contribute to the Taylor's Symphony Orchestra, and work as an Audio-Visual specialist for events.
+          </p>
+        </div>
+      </div>
+      <button class="slide-arrow-btn up-arrow" onclick="goSlide('home-track',0)" aria-label="Back to hero">&#x2303;</button>
     </div>
+
   </div>
 </section>
 
 <!-- ═══════════════ ABOUT ME ═══════════════ -->
-<section id="about" class="page-section">
+<section id="about" class="page-section fit-section">
   <div class="content-wrap">
     <div class="sec-heading"><h2>About Me</h2><div class="sec-divider"></div></div>
     <div class="about-grid">
       <div>
         <div class="info-block">
           <h3>Contact Information</h3>
-          <div class="info-row"><span class="lbl">Name</span><span contenteditable="true">Joshua Jeremiah Jebaretnam</span></div>
-          <div class="info-row"><span class="lbl">Address</span><span contenteditable="true">Petaling Jaya, Selangor, Malaysia</span></div>
-          <div class="info-row"><span class="lbl">Email</span><span contenteditable="true">joshua.jebaretnam@email.com</span></div>
-          <div class="info-row"><span class="lbl">Phone</span><span contenteditable="true">+60 12-345 6789</span></div>
-          <div class="info-row"><span class="lbl">Student ID</span><span contenteditable="true">0353225</span></div>
+          <div class="info-row"><span class="lbl">Name</span><span>Joshua Jeremiah Jebaretnam</span></div>
+          <div class="info-row"><span class="lbl">Address</span><span>Petaling Jaya, Selangor, Malaysia</span></div>
+          <div class="info-row"><span class="lbl">Email</span><span>joshua.jebaretnam@email.com</span></div>
+          <div class="info-row"><span class="lbl">Phone</span><span>+60 12-345 6789</span></div>
+          <div class="info-row"><span class="lbl">Student ID</span><span>0353225</span></div>
         </div>
         <div class="info-block">
           <h3>Objective</h3>
-          <p style="font-size:14px;color:var(--gray-mid);line-height:1.75" contenteditable="true">To develop and improve my professional skills in the Mechanical Engineering industry through continuous learning and hands-on experience. I aim to contribute meaningfully to society through engineering innovation, entrepreneurship, and leadership within the Professional Engineers &amp; Society.</p>
+          <p style="font-size:14px;color:var(--gray-mid);line-height:1.75">To develop and improve my professional skills in the Mechanical Engineering industry through continuous learning and hands-on experience. I aim to contribute meaningfully to society through engineering innovation, entrepreneurship, and leadership within the Professional Engineers &amp; Society.</p>
         </div>
         <div class="info-block">
           <h3>Education</h3>
           <div class="edu-item">
-            <h4 contenteditable="true">Bachelor of Mechanical Engineering (Hons)</h4>
-            <p contenteditable="true">Taylor's University, School of Engineering — 2022 – Present</p>
-            <ul><li contenteditable="true">Current Group Project: EV Conversion Training Vehicle (PRJ63204)</li></ul>
+            <h4>Bachelor of Mechanical Engineering (Hons)</h4>
+            <p>Taylor's University, School of Engineering — 2022 – Present</p>
+            <ul><li>Current Group Project: EV Conversion Training Vehicle (PRJ63204)</li></ul>
           </div>
           <div class="edu-item">
-            <h4 contenteditable="true">Taylor's College — Foundation in Engineering</h4>
-            <p contenteditable="true">Taylor's College, Subang Jaya — 2021 – 2022</p>
-            <ul><li contenteditable="true">Subjects: English, Mathematics, Physics and Chemistry</li></ul>
+            <h4>Taylor's College — Foundation in Engineering</h4>
+            <p>Taylor's College, Subang Jaya — 2021 – 2022</p>
+            <ul><li>Subjects: English, Mathematics, Physics and Chemistry</li></ul>
           </div>
         </div>
         <div class="info-block">
           <h3>Skills</h3>
           <div class="skill-tags">
-            <span class="skill-tag" contenteditable="true">AutoCAD</span>
-            <span class="skill-tag" contenteditable="true">SolidWorks</span>
-            <span class="skill-tag" contenteditable="true">MATLAB</span>
-            <span class="skill-tag" contenteditable="true">Microsoft Excel</span>
-            <span class="skill-tag" contenteditable="true">3D Printing / FDM</span>
-            <span class="skill-tag" contenteditable="true">Python</span>
-            <span class="skill-tag" contenteditable="true">Audio-Visual Setup</span>
-            <span class="skill-tag" contenteditable="true">Malay &amp; English</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">Microsoft Excel</span>
+            <span class="skill-tag">3D Printing / FDM</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Audio-Visual Setup</span>
+            <span class="skill-tag">Malay &amp; English</span>
           </div>
         </div>
         <div class="info-block">
           <h3>Memberships &amp; Activities</h3>
-          <p class="bullet-item" contenteditable="true">Member of Professional Engineers &amp; Society (PES), Taylor's University — since 2022</p>
-          <p class="bullet-item" contenteditable="true">Member of Taylor's Symphony Orchestra (TSO) — since 2022</p>
-          <p class="bullet-item" contenteditable="true">Founder &amp; Operator — Tweedy Essentials (3D Printing Business) — since 2023</p>
-          <p class="bullet-item" contenteditable="true">Audio-Visual Specialist for live events and productions</p>
+          <p class="bullet-item">Member of Professional Engineers &amp; Society (PES), Taylor's University — since 2022</p>
+          <p class="bullet-item">Member of Taylor's Symphony Orchestra (TSO) — since 2022</p>
+          <p class="bullet-item">Founder &amp; Operator — Tweedy Essentials (3D Printing Business) — since 2023</p>
+          <p class="bullet-item">Audio-Visual Specialist for live events and productions</p>
         </div>
       </div>
       <div>
         <div class="about-photo" style="background:#000;border:none;padding:0;overflow:hidden"><img src="data:image/jpeg;base64,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" style="width:100%;height:100%;object-fit:cover;object-position:center top" alt="Joshua Jeremiah Jebaretnam"/></div>
-        <p style="font-size:11px;color:var(--gray-mid);text-align:center;margin-top:8px" contenteditable="true">Joshua Jeremiah Jebaretnam</p>
+        <p style="font-size:11px;color:var(--gray-mid);text-align:center;margin-top:8px">Joshua Jeremiah Jebaretnam</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════ MISSION STATEMENT ═══════════════ -->
-<section id="mission" class="page-section">
-  <div class="content-wrap">
-    <div class="sec-heading"><h2>Mission Statement</h2><div class="sec-divider"></div></div>
+<section id="mission" class="page-section paged-section">
+  <div class="slide-track" id="mission-track">
 
-    <!-- S A T -->
-    <div class="sat-grid">
-      <div class="sat-card">
-        <div class="sat-letter">S</div>
-        <h3 contenteditable="true">Specific</h3>
-        <p contenteditable="true">Become a professional engineer and contribute to the field of Mechanical Engineering in the industry.</p>
+    <!-- Slide 1 — S.A.T. -->
+    <div class="slide" style="background:var(--white)">
+      <div class="content-wrap">
+        <div class="sec-heading"><h2>Mission Statement</h2><div class="sec-divider"></div></div>
+        <div class="sat-grid">
+          <div class="sat-card">
+            <div class="sat-letter">S</div>
+            <h3>Specific</h3>
+            <p>Become a professional engineer and contribute to the field of Mechanical Engineering in the industry.</p>
+          </div>
+          <div class="sat-card">
+            <div class="sat-letter">A</div>
+            <h3>Attainable</h3>
+            <p>My goals are achievable and able to accomplish in my position. I will work hard to achieve them step by step.</p>
+          </div>
+          <div class="sat-card">
+            <div class="sat-letter">T</div>
+            <h3>Timely</h3>
+            <p>After 10 years I plan to start working as an engineer, applying knowledge gained from my degree and work experience.</p>
+          </div>
+        </div>
       </div>
-      <div class="sat-card">
-        <div class="sat-letter">A</div>
-        <h3 contenteditable="true">Attainable</h3>
-        <p contenteditable="true">My goals are achievable and able to accomplish in my position. I will work hard to achieve them step by step.</p>
-      </div>
-      <div class="sat-card">
-        <div class="sat-letter">T</div>
-        <h3 contenteditable="true">Timely</h3>
-        <p contenteditable="true">After 10 years I plan to start working as an engineer, applying knowledge gained from my degree and work experience.</p>
-      </div>
+      <button class="slide-arrow-btn" onclick="goSlide('mission-track',1)" aria-label="See more">&#x2304;</button>
     </div>
 
-    <!-- M R -->
-    <p class="mr-label" contenteditable="true">Further Dimensions of My Mission</p>
-    <div class="mr-grid">
-      <div class="mr-card">
-        <div class="mr-letter">M</div>
-        <h3 contenteditable="true">Measurable</h3>
-        <p contenteditable="true">I'm tracking my progress determined by my achievements, grades, business milestones, and contributions to PES activities each semester.</p>
+    <!-- Slide 2 — M.R. + Mission Statement -->
+    <div class="slide" style="background:var(--white)">
+      <div class="content-wrap">
+        <div class="sec-heading"><h2>Mission Statement</h2><div class="sec-divider"></div></div>
+        <p class="mr-label">Further Dimensions of My Mission</p>
+        <div class="mr-grid" style="margin-bottom:32px">
+          <div class="mr-card">
+            <div class="mr-letter">M</div>
+            <h3>Measurable</h3>
+            <p>I'm tracking my progress determined by my achievements, grades, business milestones, and contributions to PES activities each semester.</p>
+          </div>
+          <div class="mr-card">
+            <div class="mr-letter">R</div>
+            <h3>Realistic</h3>
+            <p>It is a achievable and realistic mission — grounded in my current capabilities and the resources available to me as a student engineer.</p>
+          </div>
+        </div>
+        <div style="max-width:680px;margin:0 auto;padding:28px;background:var(--gray-light);border-radius:8px;border-left:4px solid var(--red)">
+          <h3 style="font-size:15px;font-weight:800;margin-bottom:10px">Personal Mission Statement</h3>
+          <p style="font-size:14px;color:var(--gray-mid);line-height:1.8">My mission is to become a competent and ethical Mechanical Engineer who creates meaningful impact through innovation, entrepreneurship, and community engagement. I am committed to continuous growth, leveraging every opportunity in my academic and professional journey to build the expertise needed to lead engineering solutions that benefit society.</p>
+        </div>
       </div>
-      <div class="mr-card">
-        <div class="mr-letter">R</div>
-        <h3 contenteditable="true">Realistic</h3>
-        <p contenteditable="true">It is a achievable and realistic mission — grounded in my current capabilities and the resources available to me as a student engineer.</p>
-      </div>
+      <button class="slide-arrow-btn up-arrow" onclick="goSlide('mission-track',0)" aria-label="Back to SAT">&#x2303;</button>
     </div>
 
-    <div style="max-width:680px;margin:48px auto 0;padding:28px;background:var(--gray-light);border-radius:8px;border-left:4px solid var(--red)">
-      <h3 style="font-size:15px;font-weight:800;margin-bottom:10px" contenteditable="true">Personal Mission Statement</h3>
-      <p style="font-size:14px;color:var(--gray-mid);line-height:1.8" contenteditable="true">My mission is to become a competent and ethical Mechanical Engineer who creates meaningful impact through innovation, entrepreneurship, and community engagement. I am committed to continuous growth, leveraging every opportunity in my academic and professional journey to build the expertise needed to lead engineering solutions that benefit society.</p>
-    </div>
   </div>
 </section>
 
@@ -163,44 +186,44 @@
     <div class="swot-grid">
       <div class="swot-card">
         <div class="swot-emoji">💪</div>
-        <h3 contenteditable="true">Strengths</h3>
+        <h3>Strengths</h3>
         <ul>
-          <li contenteditable="true">Strong technical foundation in ME subjects and CAD</li>
-          <li contenteditable="true">Hands-on entrepreneurial experience via Tweedy Essentials</li>
-          <li contenteditable="true">Multi-disciplinary background (AV, music, finance, engineering)</li>
-          <li contenteditable="true">Self-motivated and detail-oriented problem solver</li>
-          <li contenteditable="true">Strong communication skills in Malay and English</li>
+          <li>Strong technical foundation in ME subjects and CAD</li>
+          <li>Hands-on entrepreneurial experience via Tweedy Essentials</li>
+          <li>Multi-disciplinary background (AV, music, finance, engineering)</li>
+          <li>Self-motivated and detail-oriented problem solver</li>
+          <li>Strong communication skills in Malay and English</li>
         </ul>
       </div>
       <div class="swot-card">
         <div class="swot-emoji">⚠️</div>
-        <h3 contenteditable="true">Weakness</h3>
+        <h3>Weakness</h3>
         <ul>
-          <li contenteditable="true">Limited formal industry work experience</li>
-          <li contenteditable="true">Challenges managing time across multiple concurrent roles</li>
-          <li contenteditable="true">Need more exposure to advanced simulation software</li>
-          <li contenteditable="true">Could improve formal presentation and public speaking</li>
+          <li>Limited formal industry work experience</li>
+          <li>Challenges managing time across multiple concurrent roles</li>
+          <li>Need more exposure to advanced simulation software</li>
+          <li>Could improve formal presentation and public speaking</li>
         </ul>
       </div>
       <div class="swot-card">
         <div class="swot-emoji">🚀</div>
-        <h3 contenteditable="true">Opportunities</h3>
+        <h3>Opportunities</h3>
         <ul>
-          <li contenteditable="true">Growing EV and clean energy sector in Malaysia</li>
-          <li contenteditable="true">Expanding 3D printing market in Southeast Asia</li>
-          <li contenteditable="true">PES network providing strong industry connections</li>
-          <li contenteditable="true">AI and automation tools available for engineering and business</li>
-          <li contenteditable="true">Taylor's University industry partnership programmes</li>
+          <li>Growing EV and clean energy sector in Malaysia</li>
+          <li>Expanding 3D printing market in Southeast Asia</li>
+          <li>PES network providing strong industry connections</li>
+          <li>AI and automation tools available for engineering and business</li>
+          <li>Taylor's University industry partnership programmes</li>
         </ul>
       </div>
       <div class="swot-card">
         <div class="swot-emoji">🔥</div>
-        <h3 contenteditable="true">Threats</h3>
+        <h3>Threats</h3>
         <ul>
-          <li contenteditable="true">Highly competitive graduate engineering job market</li>
-          <li contenteditable="true">Rising material costs for 3D printing operations</li>
-          <li contenteditable="true">Rapid technological changes requiring constant upskilling</li>
-          <li contenteditable="true">Economic uncertainty affecting business and career plans</li>
+          <li>Highly competitive graduate engineering job market</li>
+          <li>Rising material costs for 3D printing operations</li>
+          <li>Rapid technological changes requiring constant upskilling</li>
+          <li>Economic uncertainty affecting business and career plans</li>
         </ul>
       </div>
     </div>
@@ -208,15 +231,15 @@
 </section>
 
 <!-- ═══════════════ PROGRAM OUTCOME ═══════════════ -->
-<section id="outcome" class="page-section">
+<section id="outcome" class="page-section fit-section">
   <div class="content-wrap">
     <div class="sec-heading"><h2>Program Outcome</h2><div class="sec-divider"></div></div>
     <div class="po-grid">
       <!-- Cognitive -->
       <div class="po-card">
         <span class="po-icon">🧠</span>
-        <h3 contenteditable="true">Cognitive Skills</h3>
-        <p class="po-nums" contenteditable="true">– PO1, 2, 4 &amp; 12</p>
+        <h3>Cognitive Skills</h3>
+        <p class="po-nums">– PO1, 2, 4 &amp; 12</p>
         <button class="btn-red" onclick="toggleDetail('cog-detail')">Learn More</button>
         <div id="cog-detail" class="detail-panel">
           <strong>PO1 – Engineering Knowledge:</strong> Apply knowledge of mathematics, science and engineering fundamentals to solve complex problems.<br><br>
@@ -228,8 +251,8 @@
       <!-- Technical -->
       <div class="po-card">
         <span class="po-icon">⚙️</span>
-        <h3 contenteditable="true">Technical Skills</h3>
-        <p class="po-nums" contenteditable="true">– PO3 &amp; 5</p>
+        <h3>Technical Skills</h3>
+        <p class="po-nums">– PO3 &amp; 5</p>
         <button class="btn-red" onclick="toggleDetail('tech-detail')">Learn More</button>
         <div id="tech-detail" class="detail-panel">
           <strong>PO3 – Design/Development of Solutions:</strong> Design solutions for complex engineering problems and design systems, components or processes that meet specified needs with appropriate consideration for health, safety and environmental concerns.<br><br>
@@ -239,8 +262,8 @@
       <!-- Soft -->
       <div class="po-card">
         <span class="po-icon">🤝</span>
-        <h3 contenteditable="true">Soft Skills</h3>
-        <p class="po-nums" contenteditable="true">– PO9 &amp; 10</p>
+        <h3>Soft Skills</h3>
+        <p class="po-nums">– PO9 &amp; 10</p>
         <button class="btn-red" onclick="toggleDetail('soft-detail')">Learn More</button>
         <div id="soft-detail" class="detail-panel">
           <strong>PO9 – Communication:</strong> Communicate effectively on complex engineering activities with the engineering community and with society at large, including writing comprehensive reports, design documentation, giving and receiving clear instructions.<br><br>
@@ -250,8 +273,8 @@
       <!-- Professional -->
       <div class="po-card">
         <span class="po-icon">🏅</span>
-        <h3 contenteditable="true">Professional Skills</h3>
-        <p class="po-nums" contenteditable="true">– PO6, 7, 8 &amp; 11</p>
+        <h3>Professional Skills</h3>
+        <p class="po-nums">– PO6, 7, 8 &amp; 11</p>
         <button class="btn-red" onclick="toggleDetail('prof-detail')">Learn More</button>
         <div id="prof-detail" class="detail-panel">
           <strong>PO6 – The Engineer &amp; Society:</strong> Apply reasoning informed by contextual knowledge to assess societal, health, safety, legal and cultural issues relevant to professional engineering practice.<br><br>
@@ -270,35 +293,35 @@
     <div class="sec-heading"><h2>PO Attainment</h2><div class="sec-divider"></div></div>
     <div class="poa-grid">
       <div class="poa-card">
-        <h3 contenteditable="true">Program Outcomes 1, 2, 4 and 12</h3>
-        <p class="poa-sub" contenteditable="true">Student Evidences</p>
+        <h3>Program Outcomes 1, 2, 4 and 12</h3>
+        <p class="poa-sub">Student Evidences</p>
         <a href="#" onclick="toggleDetail('poa1-detail');return false">Learn More &rsaquo;</a>
         <div id="poa1-detail" class="detail-panel" style="margin-top:14px">
-          <p contenteditable="true">Evidence for PO1, 2, 4 &amp; 12 includes: coursework assignments demonstrating problem formulation and mathematical analysis, research-based laboratory reports, and reflective learning journals showing engagement with new knowledge.</p>
+          <p>Evidence for PO1, 2, 4 &amp; 12 includes: coursework assignments demonstrating problem formulation and mathematical analysis, research-based laboratory reports, and reflective learning journals showing engagement with new knowledge.</p>
         </div>
       </div>
       <div class="poa-card">
-        <h3 contenteditable="true">Program Outcomes 3 and 5</h3>
-        <p class="poa-sub" contenteditable="true">Student's Evidences</p>
+        <h3>Program Outcomes 3 and 5</h3>
+        <p class="poa-sub">Student's Evidences</p>
         <a href="#" onclick="toggleDetail('poa2-detail');return false">Learn More &rsaquo;</a>
         <div id="poa2-detail" class="detail-panel" style="margin-top:14px">
-          <p contenteditable="true">Evidence for PO3 &amp; 5 includes: CAD design projects using SolidWorks and AutoCAD, application of simulation tools (ANSYS/MATLAB), and the EV Conversion Training Vehicle group project design documentation.</p>
+          <p>Evidence for PO3 &amp; 5 includes: CAD design projects using SolidWorks and AutoCAD, application of simulation tools (ANSYS/MATLAB), and the EV Conversion Training Vehicle group project design documentation.</p>
         </div>
       </div>
       <div class="poa-card">
-        <h3 contenteditable="true">Program Outcomes 9 and 10</h3>
-        <p class="poa-sub" contenteditable="true">Student's Evidences</p>
+        <h3>Program Outcomes 9 and 10</h3>
+        <p class="poa-sub">Student's Evidences</p>
         <a href="#" onclick="toggleDetail('poa3-detail');return false">Learn More &rsaquo;</a>
         <div id="poa3-detail" class="detail-panel" style="margin-top:14px">
-          <p contenteditable="true">Evidence for PO9 &amp; 10 includes: technical reports and presentations submitted for engineering modules, group project teamwork documentation (PRJ63204), and leadership roles in Tweedy Essentials and TSO AV coordination.</p>
+          <p>Evidence for PO9 &amp; 10 includes: technical reports and presentations submitted for engineering modules, group project teamwork documentation (PRJ63204), and leadership roles in Tweedy Essentials and TSO AV coordination.</p>
         </div>
       </div>
       <div class="poa-card">
-        <h3 contenteditable="true">Program Outcomes 6, 7, 8 and 11</h3>
-        <p class="poa-sub" contenteditable="true">Student's Evidences</p>
+        <h3>Program Outcomes 6, 7, 8 and 11</h3>
+        <p class="poa-sub">Student's Evidences</p>
         <a href="#" onclick="toggleDetail('poa4-detail');return false">Learn More &rsaquo;</a>
         <div id="poa4-detail" class="detail-panel" style="margin-top:14px">
-          <p contenteditable="true">Evidence for PO6, 7, 8 &amp; 11 includes: sustainability analysis in design projects, ethical case studies, PES membership and event participation records, and project management documentation from the EV Conversion Training Vehicle project.</p>
+          <p>Evidence for PO6, 7, 8 &amp; 11 includes: sustainability analysis in design projects, ethical case studies, PES membership and event participation records, and project management documentation from the EV Conversion Training Vehicle project.</p>
         </div>
       </div>
     </div>
@@ -309,31 +332,35 @@
 <section id="appendix" class="page-section">
   <div class="content-wrap">
     <div class="sec-heading"><h2>Appendix</h2><div class="sec-divider"></div></div>
-    <p style="text-align:center;font-size:14px;color:var(--gray-mid);margin-bottom:36px" contenteditable="true">Supporting documents and evidence for each Program Outcome.</p>
+    <p style="text-align:center;font-size:14px;color:var(--gray-mid);margin-bottom:36px">Supporting documents and evidence for each Program Outcome.</p>
     <div class="appendix-grid">
-      <div class="app-card"><div class="app-card-top">📄</div><div class="app-card-body"><div class="po-label">PO1</div><p contenteditable="true">Engineering Knowledge — Coursework Evidence</p></div></div>
-      <div class="app-card"><div class="app-card-top">📊</div><div class="app-card-body"><div class="po-label">PO2</div><p contenteditable="true">Problem Analysis — Lab Reports</p></div></div>
-      <div class="app-card"><div class="app-card-top">📐</div><div class="app-card-body"><div class="po-label">PO3</div><p contenteditable="true">Design Solutions — CAD Projects</p></div></div>
-      <div class="app-card"><div class="app-card-top">🔬</div><div class="app-card-body"><div class="po-label">PO4</div><p contenteditable="true">Investigation — Experimental Reports</p></div></div>
-      <div class="app-card"><div class="app-card-top">💻</div><div class="app-card-body"><div class="po-label">PO5</div><p contenteditable="true">Modern Tools — MATLAB / SolidWorks</p></div></div>
-      <div class="app-card"><div class="app-card-top">🏛️</div><div class="app-card-body"><div class="po-label">PO6</div><p contenteditable="true">Engineer &amp; Society — Case Studies</p></div></div>
-      <div class="app-card"><div class="app-card-top">🌿</div><div class="app-card-body"><div class="po-label">PO7</div><p contenteditable="true">Sustainability — Environmental Analysis</p></div></div>
-      <div class="app-card"><div class="app-card-top">⚖️</div><div class="app-card-body"><div class="po-label">PO8</div><p contenteditable="true">Ethics — Professional Conduct Report</p></div></div>
-      <div class="app-card"><div class="app-card-top">🗣️</div><div class="app-card-body"><div class="po-label">PO9</div><p contenteditable="true">Communication — Presentations &amp; Reports</p></div></div>
-      <div class="app-card"><div class="app-card-top">👥</div><div class="app-card-body"><div class="po-label">PO10</div><p contenteditable="true">Teamwork — Group Project Records</p></div></div>
-      <div class="app-card"><div class="app-card-top">📋</div><div class="app-card-body"><div class="po-label">PO11</div><p contenteditable="true">Project Management — EV Project Docs</p></div></div>
-      <div class="app-card"><div class="app-card-top">📚</div><div class="app-card-body"><div class="po-label">PO12</div><p contenteditable="true">Lifelong Learning — CPD Evidence</p></div></div>
+      <div class="app-card"><div class="app-card-top">📄</div><div class="app-card-body"><div class="po-label">PO1</div><p>Engineering Knowledge — Coursework Evidence</p></div></div>
+      <div class="app-card"><div class="app-card-top">📊</div><div class="app-card-body"><div class="po-label">PO2</div><p>Problem Analysis — Lab Reports</p></div></div>
+      <div class="app-card"><div class="app-card-top">📐</div><div class="app-card-body"><div class="po-label">PO3</div><p>Design Solutions — CAD Projects</p></div></div>
+      <div class="app-card"><div class="app-card-top">🔬</div><div class="app-card-body"><div class="po-label">PO4</div><p>Investigation — Experimental Reports</p></div></div>
+      <div class="app-card"><div class="app-card-top">💻</div><div class="app-card-body"><div class="po-label">PO5</div><p>Modern Tools — MATLAB / SolidWorks</p></div></div>
+      <div class="app-card"><div class="app-card-top">🏛️</div><div class="app-card-body"><div class="po-label">PO6</div><p>Engineer &amp; Society — Case Studies</p></div></div>
+      <div class="app-card"><div class="app-card-top">🌿</div><div class="app-card-body"><div class="po-label">PO7</div><p>Sustainability — Environmental Analysis</p></div></div>
+      <div class="app-card"><div class="app-card-top">⚖️</div><div class="app-card-body"><div class="po-label">PO8</div><p>Ethics — Professional Conduct Report</p></div></div>
+      <div class="app-card"><div class="app-card-top">🗣️</div><div class="app-card-body"><div class="po-label">PO9</div><p>Communication — Presentations &amp; Reports</p></div></div>
+      <div class="app-card"><div class="app-card-top">👥</div><div class="app-card-body"><div class="po-label">PO10</div><p>Teamwork — Group Project Records</p></div></div>
+      <div class="app-card"><div class="app-card-top">📋</div><div class="app-card-body"><div class="po-label">PO11</div><p>Project Management — EV Project Docs</p></div></div>
+      <div class="app-card"><div class="app-card-top">📚</div><div class="app-card-body"><div class="po-label">PO12</div><p>Lifelong Learning — CPD Evidence</p></div></div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════════ SELF ASSESSMENT ═══════════════ -->
-<section id="selfassess" class="page-section">
-  <div class="content-wrap">
-    <div class="sec-heading"><h2>Self Assessment Evaluation on Program Outcome</h2><div class="sec-divider"></div></div>
+<section id="selfassess" class="page-section paged-section">
+  <div class="slide-track" id="selfassess-track">
 
-    <!-- Student info bar -->
-    <div class="sa-info-bar">
+    <!-- Slide 1 — Info + Table -->
+    <div class="slide" style="background:var(--white)">
+      <div class="content-wrap">
+        <div class="sec-heading"><h2>Self Assessment Evaluation on Program Outcome</h2><div class="sec-divider"></div></div>
+
+        <!-- Student info bar -->
+        <div class="sa-info-bar">
       <div><span class="sa-label">Name:</span> Joshua Jeremiah Jebaretnam</div>
       <div><span class="sa-label">Student Number:</span> 0353225</div>
       <div><span class="sa-label">Programme:</span> Bachelor of Mechanical Engineering with Honours</div>
@@ -372,11 +399,17 @@
           <tr class="wcgpa-row"><td>PLO WCGPA</td><td>2.67</td><td>2.57</td><td>3.96</td><td>2.92</td><td>3.31</td><td>3.95</td><td>2.67</td><td>3.64</td><td>4.00</td><td>2.95</td><td>3.86</td><td>3.10</td></tr>
         </tbody>
       </table>
-    </div>
+      </div><!-- end sa-table-wrap -->
+      </div><!-- end content-wrap slide1 -->
+      <button class="slide-arrow-btn" onclick="goSlide('selfassess-track',1)" aria-label="See radar chart">&#x2304;</button>
+    </div><!-- end slide 1 -->
 
-    <!-- Radar chart -->
-    <div class="radar-box">
-      <h4>PLO WCGPA Achievement</h4>
+    <!-- Slide 2 — Radar Chart -->
+    <div class="slide" style="background:var(--white);justify-content:center">
+      <div class="content-wrap">
+        <div class="sec-heading"><h2>PLO Achievement Radar</h2><div class="sec-divider"></div></div>
+        <div class="radar-box">
+          <h4>PLO WCGPA Achievement</h4>
       <svg class="radar-svg" viewBox="0 0 380 335" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <style>
@@ -424,76 +457,80 @@
         <text x="64"  y="90"  class="rl rl-b">PLO11<tspan class="rl" x="64"  dy="12">(TGC6)</tspan></text>
         <text x="116" y="44"  class="rl rl-b">PLO12<tspan class="rl" x="116" dy="12">(TGC4)</tspan></text>
       </svg>
-      <p style="font-size:11px;color:var(--gray-mid);margin-top:6px">&#9632; WCGPA &nbsp;(scale 0 – 4.00)</p>
-    </div>
-  </div>
+          <p style="font-size:11px;color:var(--gray-mid);margin-top:6px">&#9632; WCGPA &nbsp;(scale 0 – 4.00)</p>
+        </div><!-- end radar-box -->
+      </div><!-- end content-wrap slide2 -->
+      <button class="slide-arrow-btn up-arrow" onclick="goSlide('selfassess-track',0)" aria-label="Back to table">&#x2303;</button>
+    </div><!-- end slide 2 -->
+
+  </div><!-- end slide-track -->
 </section>
 
 <!-- ═══════════════ PROGRAMME OUTCOME EVALUATION ═══════════════ -->
 <section id="poevaluation" class="page-section">
   <div class="content-wrap">
     <div class="sec-heading"><h2>Programme Outcome Evaluation</h2><div class="sec-divider"></div></div>
-    <p style="font-size:14px;color:var(--gray-mid);margin-bottom:36px;text-align:center" contenteditable="true">Reflective evaluation of how each programme outcome has been demonstrated throughout my engineering studies.</p>
+    <p style="font-size:14px;color:var(--gray-mid);margin-bottom:36px;text-align:center">Reflective evaluation of how each programme outcome has been demonstrated throughout my engineering studies.</p>
 
     <div class="eval-item">
-      <h3 contenteditable="true">PO1 — Engineering Knowledge</h3>
+      <h3>PO1 — Engineering Knowledge</h3>
       <div class="po-ref">Cognitive Skills</div>
-      <p contenteditable="true">Throughout my engineering modules, I have applied knowledge of mathematics, science, and engineering fundamentals to solve complex problems. This is evidenced through assignments in Thermodynamics, Fluid Mechanics, and Structural Analysis, where I consistently applied first-principles approaches to derive solutions.</p>
+      <p>Throughout my engineering modules, I have applied knowledge of mathematics, science, and engineering fundamentals to solve complex problems. This is evidenced through assignments in Thermodynamics, Fluid Mechanics, and Structural Analysis, where I consistently applied first-principles approaches to derive solutions.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO2 — Problem Analysis</h3>
+      <h3>PO2 — Problem Analysis</h3>
       <div class="po-ref">Cognitive Skills</div>
-      <p contenteditable="true">I have developed strong analytical skills through laboratory investigations and case-study-based assessments. My ability to identify and formulate engineering problems is demonstrated in the EV Conversion Training Vehicle project, where I contributed to problem scoping, literature review, and analysis of technical constraints.</p>
+      <p>I have developed strong analytical skills through laboratory investigations and case-study-based assessments. My ability to identify and formulate engineering problems is demonstrated in the EV Conversion Training Vehicle project, where I contributed to problem scoping, literature review, and analysis of technical constraints.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO3 — Design / Development of Solutions</h3>
+      <h3>PO3 — Design / Development of Solutions</h3>
       <div class="po-ref">Technical Skills</div>
-      <p contenteditable="true">My CAD competency in SolidWorks and AutoCAD demonstrates my ability to design components and systems. The EV conversion project required iterative design and development, where I contributed to the mechanical layout, component sizing, and integration planning.</p>
+      <p>My CAD competency in SolidWorks and AutoCAD demonstrates my ability to design components and systems. The EV conversion project required iterative design and development, where I contributed to the mechanical layout, component sizing, and integration planning.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO4 — Investigation</h3>
+      <h3>PO4 — Investigation</h3>
       <div class="po-ref">Cognitive Skills</div>
-      <p contenteditable="true">Experimental investigations conducted in Materials Testing and Dynamics labs demonstrate my ability to design experiments, collect data, and draw conclusions. I consistently presented data with appropriate analysis tools including graphs, regression analysis, and statistical evaluation.</p>
+      <p>Experimental investigations conducted in Materials Testing and Dynamics labs demonstrate my ability to design experiments, collect data, and draw conclusions. I consistently presented data with appropriate analysis tools including graphs, regression analysis, and statistical evaluation.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO5 — Modern Tool Usage</h3>
+      <h3>PO5 — Modern Tool Usage</h3>
       <div class="po-ref">Technical Skills</div>
-      <p contenteditable="true">I regularly use MATLAB for numerical computation, SolidWorks for 3D modelling, and Microsoft Excel for engineering data analysis and business management. Through Tweedy Essentials, I also developed a custom Excel-based quoting tool demonstrating practical tool development.</p>
+      <p>I regularly use MATLAB for numerical computation, SolidWorks for 3D modelling, and Microsoft Excel for engineering data analysis and business management. Through Tweedy Essentials, I also developed a custom Excel-based quoting tool demonstrating practical tool development.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO6 — The Engineer &amp; Society</h3>
+      <h3>PO6 — The Engineer &amp; Society</h3>
       <div class="po-ref">Professional Skills</div>
-      <p contenteditable="true">My understanding of the engineer's role in society is demonstrated through coursework addressing health, safety, and cultural considerations in engineering design. The EV conversion project specifically required consideration of road safety standards and national EV adoption policy.</p>
+      <p>My understanding of the engineer's role in society is demonstrated through coursework addressing health, safety, and cultural considerations in engineering design. The EV conversion project specifically required consideration of road safety standards and national EV adoption policy.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO7 — Environment &amp; Sustainability</h3>
+      <h3>PO7 — Environment &amp; Sustainability</h3>
       <div class="po-ref">Professional Skills</div>
-      <p contenteditable="true">Sustainability is a core theme in my engineering studies. The EV Conversion Training Vehicle project is inherently aligned with sustainable transport goals, and I have evaluated the lifecycle environmental impacts of engineering decisions in relevant assignments.</p>
+      <p>Sustainability is a core theme in my engineering studies. The EV Conversion Training Vehicle project is inherently aligned with sustainable transport goals, and I have evaluated the lifecycle environmental impacts of engineering decisions in relevant assignments.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO8 — Ethics</h3>
+      <h3>PO8 — Ethics</h3>
       <div class="po-ref">Professional Skills</div>
-      <p contenteditable="true">I am committed to professional ethics both academically and in my business operations. Through PES membership and coursework on engineering ethics, I have developed an understanding of the responsibilities that come with being a professional engineer.</p>
+      <p>I am committed to professional ethics both academically and in my business operations. Through PES membership and coursework on engineering ethics, I have developed an understanding of the responsibilities that come with being a professional engineer.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO9 — Communication</h3>
+      <h3>PO9 — Communication</h3>
       <div class="po-ref">Soft Skills</div>
-      <p contenteditable="true">My communication skills are evidenced through comprehensive technical reports, project presentations, business documentation for Tweedy Essentials, and event coordination for the Taylor's Symphony Orchestra. I consistently receive strong feedback on written and verbal communication.</p>
+      <p>My communication skills are evidenced through comprehensive technical reports, project presentations, business documentation for Tweedy Essentials, and event coordination for the Taylor's Symphony Orchestra. I consistently receive strong feedback on written and verbal communication.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO10 — Individual &amp; Teamwork</h3>
+      <h3>PO10 — Individual &amp; Teamwork</h3>
       <div class="po-ref">Soft Skills</div>
-      <p contenteditable="true">I function effectively both independently and within teams. The EV Conversion group project (PRJ63204) demonstrates my ability to collaborate in a multidisciplinary team, while Tweedy Essentials demonstrates my capacity to work independently as an entrepreneur.</p>
+      <p>I function effectively both independently and within teams. The EV Conversion group project (PRJ63204) demonstrates my ability to collaborate in a multidisciplinary team, while Tweedy Essentials demonstrates my capacity to work independently as an entrepreneur.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO11 — Project Management</h3>
+      <h3>PO11 — Project Management</h3>
       <div class="po-ref">Professional Skills</div>
-      <p contenteditable="true">Project management skills are demonstrated through the structured planning and execution of the EV conversion project, the management of Tweedy Essentials client jobs and timelines, and the coordination of the TSO rehearsal schedule using a multi-sheet Excel planning system.</p>
+      <p>Project management skills are demonstrated through the structured planning and execution of the EV conversion project, the management of Tweedy Essentials client jobs and timelines, and the coordination of the TSO rehearsal schedule using a multi-sheet Excel planning system.</p>
     </div>
     <div class="eval-item">
-      <h3 contenteditable="true">PO12 — Lifelong Learning</h3>
+      <h3>PO12 — Lifelong Learning</h3>
       <div class="po-ref">Cognitive Skills</div>
-      <p contenteditable="true">My commitment to lifelong learning is demonstrated through self-directed study in stock research, AI-powered research workflows, and continuous upskilling in engineering software. I actively seek knowledge beyond the curriculum to remain competitive in the evolving engineering landscape.</p>
+      <p>My commitment to lifelong learning is demonstrated through self-directed study in stock research, AI-powered research workflows, and continuous upskilling in engineering software. I actively seek knowledge beyond the curriculum to remain competitive in the evolving engineering landscape.</p>
     </div>
   </div>
 </section>
@@ -511,7 +548,7 @@
     <a href="#" data-page="selfassess">Self Assessment Evaluation on Program Outcome</a>
     <a href="#" data-page="poevaluation">Programme Outcome Evaluation</a>
   </div>
-  <p>Copyright © 2025 <span contenteditable="true">Joshua Jeremiah Jebaretnam</span> | Taylor's University | Professional Engineers &amp; Society</p>
+  <p>Copyright © 2025 <span>Joshua Jeremiah Jebaretnam</span> | Taylor's University | Professional Engineers &amp; Society</p>
 </footer>
 
 <script src="js/main.js"></script>
